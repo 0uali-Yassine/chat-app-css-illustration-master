@@ -1,0 +1,254 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html{
+    /* ### Primary
+    #### Text */
+    --Pale-Violet: hsl(276, 100%, 81%);
+    --Moderate-Violet: hsl(276, 55%, 52%);
+    --Desaturated-Dark-Violet: hsl(271, 15%, 43%);
+    --Grayish-Blue: hsl(206, 6%, 79%);
+    --Very-Dark-Desaturated-Violet: hsl(271, 36%, 24%);
+    --Dark-Grayish-Violet: hsl(270, 7%, 64%);
+    /* #### Gradients */
+   --Light-Magenta: hsl(293, 100%, 63%);
+    --Light-Violet: hsl(264, 100%, 61%);
+    /* ### Secondary */
+    --White: hsl(0, 0%, 100%);
+    --Light-Grayish-Violet: hsl(270, 20%, 96%);
+    --Very-Dark-Desaturated-Violet: hsl(271, 36%, 24%);
+    --Very-Light-Magenta: hsl(289, 100%, 72%);
+    font-family: 'Rubik', sans-serif;
+}
+
+.background{
+    background: linear-gradient(var(--Light-Magenta),var(--Light-Violet));
+    width: 465px;
+    height: 575px;
+    margin: auto;
+    border-bottom-left-radius:50%;
+    border-bottom-right-radius:50%;
+    position: absolute;
+    top: 0%;
+    left: -69px;
+}
+
+main{
+    display: flex;
+    flex-direction: row;
+    margin-top: 64px;
+    margin-left: 259px;
+}
+.phone{
+    width: 330px;
+    height: 555px;
+    border: 14px solid white;
+    box-shadow: 1px 1px 15px grey;
+    border-radius: 40px;
+    background-color:var( --Light-Grayish-Violet);
+    overflow: hidden;
+    position: relative;
+}
+.header{
+    width: 50%;
+    height: 26px;
+    position: absolute;
+    left: 25%;
+    top: -7px;
+    border-radius: 20px;
+    background-color: white;
+}
+.target{
+    background:linear-gradient(to right,var(--Light-Violet),var(--Light-Magenta));
+    width: 100%;
+    height: 82px;
+    padding-top: 19px;
+    display: flex;
+    align-items: center;
+}
+.icon_one{
+    background-image: url('/images/chevron-back-outline.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 20px;
+    height: 20px;
+}
+.name_target{
+    display: flex;
+    position: relative;
+}
+.img_target{
+    background-image: url('/images/avatar.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 30px;
+    height: 30px;
+    border: 2px solid white;
+    border-radius: 50%;
+}
+.name{
+    margin-left: 3px;
+}
+.name h4{
+    color: white;
+}
+.name p{
+    color: rgb(209, 206, 206);
+    font-size: .7rem;
+}
+.target .icon_two{
+    background-image: url('/images/ellipsis-vertical-outline.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    right: 2px;
+    top: 39px;
+}
+.text1{
+    width: 70%;
+    height: auto;
+    background-color: rgb(232, 228, 228);
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    margin: 5px 0px 5px 5px;
+    padding: 5px;
+    font-size: .8rem;
+    color: var(--Moderate-Violet);
+}
+.dogs{
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+}
+.img_dogs{
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 50px;
+    height: 50px;
+    margin: 6px;
+    border-radius: 8px;
+}
+.dog1{
+    background-image: url('/images/dog-image-1.jpg');
+}
+.dog2{
+    background-image: url('/images/dog-image-2.jpg');
+}
+.dog3{
+    background-image: url('/images/dog-image-3.jpg');
+}
+.text2{
+    width: 70%;
+    height: auto;
+    background-color: white;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    margin: 5px 0px 5px 78px;
+    padding: 5px;
+    font-size: .8rem;
+    color: rgb(107, 97, 97);
+}
+.text3{
+    width: 70%;
+    height: auto;
+    background-color: rgb(232, 228, 228);
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    margin: 5px 0px 5px 5px;
+    padding: 5px;
+    font-size: .8rem;
+    color: var(--Moderate-Violet);
+}
+.circle{
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    border: 1px solid rgb(202, 200, 200);
+}
+.price_forWalk{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 80%;
+    height: 39px;
+    background:linear-gradient(to left,var(--Light-Violet),var(--Light-Magenta));
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    margin: 5px 0px 5px 5px;
+    padding: 5px;
+
+}
+.time p{
+    font-size: .8rem;
+    color: white;
+}
+.price h3{
+    color: white;
+    font-size: 1rem;
+}
+
+.input{
+    width: 95%;
+    height: 40px;
+    margin: 15px auto;
+    background-color: white;
+    border-radius: 23px;
+    padding: 13px;
+    position: relative;
+}
+.input p{
+    color: rgb(215, 213, 213);
+    font-size: .8rem;
+}
+.input .icon3{
+    background-image: url('/images/chevron-forward-circle.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 35px;
+    height: 32px;
+    position: absolute;
+    right: 3px;
+    top: 2px;
+}
+
+.info{
+    height: 200px;
+    text-align: left;
+    flex-shrink: 4;
+    padding-top: 173px;
+    padding-left: 87px;
+}
+.info h3{
+    color: var(--Very-Dark-Desaturated-Violet);
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+.info p{
+    color: var(--Desaturated-Dark-Violet);
+}
+
+@media only screen and (max-width: 831px){
+    main{
+        flex-direction: column;
+        align-items: center;
+        margin-top: 20px;
+        width:50%;
+        margin: auto;
+    }
+    .info{
+        text-align: center;
+        padding: 6px;
+        width: 100%;
+    }
+}
+
+
+
